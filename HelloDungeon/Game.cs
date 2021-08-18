@@ -10,15 +10,20 @@ namespace HelloDungeon
         {
             //start menu
             Console.WriteLine("Welcome to the game");
+            Console.WriteLine();
             Console.WriteLine("Type start to continue");
             Console.ReadLine();
 
 
             //Choose player name
             string name = "Empty";
+            Console.WriteLine();
             Console.WriteLine("Please enter your name.");
             name = Console.ReadLine();
+            Console.WriteLine();
             Console.WriteLine("Welcome " + name);
+
+            //test
         }
     }
 }
