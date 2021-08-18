@@ -20,9 +20,11 @@ namespace HelloDungeon
             string characterhealth = "100";
             string power = "200";
 
+
+
+            //gun slinger story options
+            string characterchoice = "1";
             
-
-
 
             
             
@@ -39,47 +41,101 @@ namespace HelloDungeon
             //Choose player name
             string name = "Empty";
             Console.WriteLine();
-            Console.WriteLine("Please enter your name.");
+            Console.WriteLine("Choose your name.");
             name = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Welcome " + name);
             Console.WriteLine();
 
-            //Character select menu
-            Console.WriteLine("Choose a class");
-            Console.WriteLine("1.Gunslinger");
-            Console.WriteLine("2.Brawler");
-            Console.Write("> ");
+            string input = "";
+            bool validinputrecieved = false;
 
-            //input from player
-            string input = Console.ReadLine();
-
-            if (input == "1" || input == "Gunslinger")
+            while (validinputrecieved == false)
             {
-                characterjob = "Gunslinger";
-                characterhealth = "100";
-                power = "200";
-                Console.WriteLine("Gunslinger");
-                Console.WriteLine("Health 100");
-                Console.WriteLine("Power 200");
-                Console.ReadLine();
+                //Character select menu
+                Console.WriteLine("Choose a class");
+                Console.WriteLine("1.Gunslinger");
+                Console.WriteLine("2.Brawler");
+                Console.Write("> ");
+
+                //input from player
+                input = Console.ReadLine();
+
+                if (input == "1" || input == "Gunslinger")
+                {
+                    characterjob = "Gunslinger";
+                    characterhealth = "100";
+                    power = "200";
+                    Console.WriteLine("Gunslinger");
+                    Console.WriteLine("Health 100");
+                    Console.WriteLine("Power 200");
+                    Console.WriteLine();
+                    Console.WriteLine("press enter to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    validinputrecieved = true;
+                    Console.Clear();
+
+                    // gunslinger story
+                    if (input == "1" || input == "Gunslinger")
+                        Console.WriteLine("you are drinking at a bar in a town you have never been to.");
+                    Console.WriteLine();
+                    Console.WriteLine("press enter to continue");
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    Console.WriteLine("4 men wearing bandanas all walk up behind you and stop, telling you to get out of their town");
+                    Console.WriteLine();
+                    Console.WriteLine("press enter to continue");
+                    Console.ReadLine();
+                    Console.WriteLine("how do you responde?");
+                    Console.WriteLine();
+                    Console.WriteLine("1.Attack the bandits");
+                    Console.WriteLine("2.Apologize and walk away");
+                    Console.Write("> ");
+                    
+                    
+
+
+
+
+                }
+                else if (input == "2" || input == "Brawler")
+                {
+                    characterjob = "Brawler";
+                    characterhealth = "300";
+                    power = "600";
+                    Console.WriteLine("Brawler");
+                    Console.WriteLine("Health 300");
+                    Console.WriteLine("Power 600");
+                    Console.WriteLine();
+                    Console.WriteLine("press enter to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    validinputrecieved = true;
+
+                    //brawler story
+                    if (input == "2" || input == "Brawler")
+                        Console.WriteLine("Place holder text");
+                    
+                }
+                else
+                {
+
+                    Console.WriteLine("Invalid input");
+
+
+                }
+                Console.ReadKey();
                 Console.Clear();
-                
+                        
+                     
+
+            
+
+
+
 
             }
-            else if (input == "2" || input == "Brawler")
-            {
-                characterjob = "Brawler";
-                characterhealth = "300";
-                power = "600";
-                Console.WriteLine("Brawler");
-                Console.WriteLine("Health 300");
-                Console.WriteLine("Power 600");
-                Console.ReadLine();
-                Console.Clear();
-
-            }
-
         }
     }
 }
