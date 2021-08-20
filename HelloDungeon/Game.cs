@@ -69,6 +69,7 @@ namespace HelloDungeon
                     Console.WriteLine("Gunslinger");
                     Console.WriteLine("Health 100");
                     Console.WriteLine("Power 200");
+                    Console.WriteLine("Two six shooter revolvers");
                     Console.WriteLine();
                     Console.WriteLine("press enter to continue");
                     Console.ReadLine();
@@ -78,22 +79,48 @@ namespace HelloDungeon
 
                     // gunslinger story
                     if (input == "1" || input == "Gunslinger")
+                    {
+                        string decide = " ";
                         Console.WriteLine("you are drinking at a bar in a town you have never been to.");
-                    Console.WriteLine();
-                    Console.WriteLine("press enter to continue");
-                    Console.WriteLine();
-                    Console.ReadLine();
-                    Console.WriteLine("4 men wearing bandanas all walk up behind you and stop, telling you to get out of their town");
-                    Console.WriteLine();
-                    Console.WriteLine("press enter to continue");
-                    Console.ReadLine();
-                    Console.WriteLine("how do you responde?");
-                    Console.WriteLine();
-                    Console.WriteLine("1.Attack the bandits");
-                    Console.WriteLine("2.Apologize and walk away");
-                    Console.Write("> ");
-                    
-                    
+                        Console.WriteLine();
+                        Console.WriteLine("press enter to continue");
+                        Console.WriteLine();
+                        Console.ReadLine();
+                        Console.WriteLine("4 men wearing bandanas all walk up behind you and stop, telling you to get out of their town");
+                        Console.WriteLine();
+                        Console.WriteLine("press enter to continue");
+                        Console.ReadLine();
+                        Console.WriteLine("how do you respond?");
+                        Console.WriteLine();
+                        Console.WriteLine("1.Attack the bandits");
+                        Console.WriteLine("2.Apologize and walk away");
+                        Console.Write("> ");
+                        decide = Console.ReadLine();
+                        Console.Clear();
+
+                        if (decide == "1")
+                        {
+                            Console.WriteLine("You throw ur whiskey on the tallest bandit and throw your chair at his head");
+                            Console.WriteLine();
+                            Console.WriteLine("stuff");
+                            
+                            
+
+
+                        }
+                        else if (decide == "2")
+                        {
+                            Console.WriteLine("other stuff");
+                        }
+                            
+                        
+                            
+
+
+                        
+                        
+                            
+                    }
 
 
 
@@ -115,7 +142,7 @@ namespace HelloDungeon
 
                     //brawler story
                     if (input == "2" || input == "Brawler")
-                        Console.WriteLine("Place holder text");
+                        Console.WriteLine("Stuff happens");
                     
                 }
                 else
