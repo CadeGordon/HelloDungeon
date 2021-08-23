@@ -6,6 +6,8 @@ namespace HelloDungeon
 {
     class Game
     {
+        bool gameOver = false;
+        
         string input = "";
         bool validinputrecieved = false;
         int inputrecieved = 0;
@@ -32,6 +34,7 @@ namespace HelloDungeon
             Console.Write("> ");
             if (input == "1")
             {
+                
 
 
             }
