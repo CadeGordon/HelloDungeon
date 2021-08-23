@@ -13,7 +13,27 @@ namespace HelloDungeon
         int power = 200;
         int health = 100;
         int healthRegen = 50;
-        int GetInput(string description, )
+        int GetInput(string description ,string option1, string option2)
+        {
+            Console.WriteLine("Choose a story");
+            Console.WriteLine("1.Gunslinger");
+            Console.WriteLine("2.Brawler");
+            Console.Write("> ");
+            string input = "";
+            int inputrecived = 0;
+            return 0;
+        }
+        int GameOver(string description, string option1, string option2)
+        {
+            Console.WriteLine("You have died or been arrested either way you failed would you like to restart");
+            Console.WriteLine();
+            Console.WriteLine("1.Yes");
+            Console.WriteLine("2.No");
+            Console.Write("> ");
+            string input = "";
+            int inputrecived = 0;
+            return 0;
+        }
 
             /// <summary>
             /// prints all even numbers in the range [num1 and num2]
@@ -81,10 +101,9 @@ namespace HelloDungeon
             while (!(inputrecieved == 1 || inputrecieved == 2))
             {
                 //Character select menu
-                Console.WriteLine("Choose a story");
-                Console.WriteLine("1.Gunslinger");
-                Console.WriteLine("2.Brawler");
-                Console.Write("> ");
+                GetInput("Choose a story", "1.Gunslinger", "2.Brawler");
+                
+                
 
                 //input from player
                 input = Console.ReadLine();
@@ -156,11 +175,16 @@ namespace HelloDungeon
                                 Console.WriteLine("The law rushes over to see what the sound was and see you holding two revolvers standing over 4 dead bodies");
                                 Console.WriteLine();
                                 Console.WriteLine("you get arrested you fail!!!");
+                                Console.WriteLine();
+                                Console.WriteLine("Press enter to continue");
+                                Console.ReadLine();
+                                Console.Clear();
+                                GameOver("1", "1", "1");
 
                             }
                             else if (decide == "2")
                             {
-                                Console.WriteLine("You try and talk but the law comes ");
+                                Console.WriteLine("You try and talk but the law comes");
                             }
                             else
                             {
